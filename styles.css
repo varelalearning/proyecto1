@@ -1,165 +1,197 @@
 * {
-    box-sizing: border-box; 
-    padding: 0;
-    margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
-
+body {
+  padding: 50px;
+}
 /* Estilo para el header*/
 .header {
-    margin: 50px; /* Margen alrededor del header */
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between; /* Para el espaciado entre los elementos */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; /* Para el espaciado entre los elementos */
 }
 
 /* Barra de navegacion dentro del header */
 .header-navigation {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center; /* Para alinear al centro en el eje vertical */
-    gap: 50px; /* Para el espacio entre los elementos de navegaccion(Features, Team, Sign In) */
-    font-family: "Raleway";
-    font-weight: 400;
-    font-style: normal;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center; /* Para alinear al centro en el eje vertical */
+  gap: 50px; /* Para el espacio entre los elementos de navegaccion(Features, Team, Sign In) */
+  font-family: "Raleway";
+  font-weight: 400;
+  font-style: normal;
 }
 
 /* Para los links */
 .header-link {
-    color: #0D0B20;
-    text-decoration: none; /* Para sacarle el subrayado */
+  color: #0d0b20;
+  text-decoration: none; /* Para sacarle el subrayado */
 }
 
 /* Area del texto */
 .texto-area {
-    display: flex;
-    gap: 100px;
-    justify-content: space-between;
-    align-items: center;
-    margin: 100px 50px;
-    flex-wrap: wrap;
+  display: flex;
+  gap: 100px;
+  justify-content: space-between;
+  align-items: center;
+  margin: 100px 50px;
+  flex-wrap: wrap;
 }
 
 /* Style del todo el texto a la izquierda */
 .texto-left {
-    flex: 1; /* Esto hace que el texto se agrande y ajuste al tamaño ed la página */
-    min-width: 300px;
-    margin-right: 20px;
-    font-family: "Raleway";
-    font-weight: 400;
-    font-style: normal;
+  flex: 1; /* Esto hace que el texto se agrande y ajuste al tamaño ed la página */
+  min-width: 300px;
+  margin-right: 20px;
+  font-family: "Raleway";
+  font-weight: 400;
+  font-style: normal;
 }
 
 /* Le puse texto, pero es la imagen de la derecha */
 .texto-right {
-    flex: 1;
-    min-width: 300px;
-    display: flex;
-    justify-content: center; 
+  flex: 1;
+  min-width: 300px;
+  display: flex;
+  justify-content: center;
 }
 
 /* Style del Titulo */
 .header-one {
-    font-size: 40px;
-    line-height: 1.5; /* Espaciado entre lineas */
-    color: #050537;
+  font-size: 40px;
+  line-height: 1.5; /* Espaciado entre lineas */
+  color: #050537;
 }
 
 /* Margen para el titulo y el parrafo debajo */
-.header-one, .paragraph-one {
-    margin-bottom: 20px; /* Sets bottom margin */
+.header-one,
+.paragraph-one {
+  margin-bottom: 20px; /* Sets bottom margin */
 }
 
 /* Style del parrafo */
 .paragraph-one {
-    margin-top: 20px;
-    color: #0D0B20;
-    line-height: 1.5;
-    font-size: 16px;
-    font-family: "Open Sans", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    
+  margin-top: 20px;
+  color: #0d0b20;
+  line-height: 1.5;
+  font-size: 16px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.stay-productive {
+  font-size: 40px;
+  line-height: 1.5; /* Espaciado entre lineas */
+  color: #050537;
+  font-family: "RALEWAY";
+  margin: 50px;
 }
 
 /* Stylo de la imagen a la derecha */
 .picture-1 {
-    max-width: 100%; /* Para que la imagen no exceda el tamaño de su contenedor */
-    height: auto; /* Mantiene el Ratio de la imagen(que no se estire mas de un lado de otro) */
-    object-fit: cover;
+  max-width: 100%; /* Para que la imagen no exceda el tamaño de su contenedor */
+  height: auto; /* Mantiene el Ratio de la imagen(que no se estire mas de un lado de otro) */
+  object-fit: cover;
 }
 
 /* Style del input y el botón */
 .email-input {
-    display: flex;
-    gap: 15px; /* Espacio entre input y botón */
-    align-items: center;
-    margin-top: 10px;
+  display: flex;
+  gap: 15px; /* Espacio entre input y botón */
+  align-items: center;
+  margin-top: 10px;
 }
 
 /* Style del input */
 .email-input input[type="email"] {
-    flex: 1;
-    padding: 10px;
-    font-size: 16px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+  flex: 1;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
 }
 
 /* Style del botón */
 .email-input button {
-    padding: 12px 50px;
-    font-size: 12px;
-    color: #fff; /* Sets text color */
-    background-color: #6B9BFF;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer; /* Cambia el cursor de puntero a manito */
-    transition: background-color 0.3s; /* Agrega un efecto de color al colocar el raton encima */
+  padding: 12px 50px;
+  font-size: 12px;
+  color: #fff; /* Sets text color */
+  background-color: #6b9bff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer; /* Cambia el cursor de puntero a manito */
+  transition: background-color 0.3s; /* Agrega un efecto de color al colocar el raton encima */
 }
 
 /* Style para el efecto prevop */
 .email-input button:hover {
-    background-color: #4752c4; /* Color al cual va a cambiar el botón al poner el mouse encima */
+  background-color: #4752c4; /* Color al cual va a cambiar el botón al poner el mouse encima */
 }
 
 /* Style para el mensaje de error */
 .error-message {
-    color: red;
-    font-size: 14px;
-    margin-top: 5px;
-    display: none; /* Esconde el mensaje */
+  color: red;
+  font-size: 14px;
+  margin-top: 5px;
+  display: none; /* Esconde el mensaje */
 }
 
+.paragraph-dos {
+  margin-top: 20px;
+  color: #0d0b20;
+  line-height: 1.5;
+  font-size: 16px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  margin-bottom: 20px;
+}
+.paragraph-dos p:nth-child(2) {
+  margin-bottom: 20px;
+  color: red;
+}
+.link-verde {
+  text-decoration: none;
+  color: hsl(170, 45%, 43%);
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  border-bottom: 2px solid;
+  padding-bottom: 5px;
+}
 /* Para el diseño móbil */
 @media (max-width: 767px) {
-    .texto-area {
-        flex-direction: column; /* Coloca los elementos de manera vertical */
-        align-items: flex-start;
-    }
-    .texto-right {
-        order: -1; /* Muestra la imagen antes de los textos*/
-    }
-    .texto-left {
-        order: 1; /* Muestra los textos por debajo de la imagen */
-    }
-    .texto-left, .texto-right {
-        margin-right: 0; 
-        margin-bottom: 20px;
-    }
-    .email-input {
-        flex-direction: column;
-        align-items: stretch; /* Para ajustar los elemenos al tamaño del contenedor */
-    }
-    .email-input input[type="email"],
-    .email-input button {
-        border-radius: 4px;
-        margin-bottom: 10px;
-    }
-    .email-input button {
-        width: 100%;
-    }
-    .header-one, .paragraph-one {
-        text-align: center;
-    }
+  .texto-area {
+    flex-direction: column; /* Coloca los elementos de manera vertical */
+    align-items: flex-start;
+  }
+  .texto-right {
+    order: -1; /* Muestra la imagen antes de los textos*/
+  }
+  .texto-left {
+    order: 1; /* Muestra los textos por debajo de la imagen */
+  }
+  .texto-left,
+  .texto-right {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+  .email-input {
+    flex-direction: column;
+    align-items: stretch; /* Para ajustar los elemenos al tamaño del contenedor */
+  }
+  .email-input input[type="email"],
+  .email-input button {
+    border-radius: 4px;
+    margin-bottom: 10px;
+  }
+  .email-input button {
+    width: 100%;
+  }
+  .header-one,
+  .paragraph-one {
+    text-align: center;
+  }
 }
