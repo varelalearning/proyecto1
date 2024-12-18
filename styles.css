@@ -1,3 +1,13 @@
+/* Variables de colores */
+:root {
+  --color-primary-very-dark-blue: hsl(243, 87%, 12%);
+  --color-primary-desaturated-blue: hsl(238, 22%, 44%);
+  --color-accent-bright-blue: hsl(224, 93%, 58%);
+  --color-accent-moderate-cyan: hsl(170, 45%, 43%);
+  --color-neutral-light-grayish-blue: hsl(240, 75%, 98%);
+  --color-neutral-light-gray: hsl(0, 0%, 75%);
+}
+
 * {
   box-sizing: border-box;
   padding: 0;
@@ -161,6 +171,74 @@ body {
   border-bottom: 2px solid;
   padding-bottom: 5px;
 }
+
+/* Le puse texto2, pero es la imagen de la derecha 2 */
+.texto-right2 {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+/* CTA Section arriba del footer*/
+.cta {
+  background-color: var(--color-primary-desaturated-blue);
+  color: white;
+  text-align: start;
+  padding: 20px;
+  display: flex;
+}
+.cta__content {
+  justify-content: start;
+  align-items: center;
+}
+.cta__form {
+  display: flex;
+  justify-content: right;
+  align-content: center;
+  margin-top: 20px;
+  padding: 20px;
+}
+
+.cta__input {
+  padding: 0;
+  border: none;
+  border-radius: 2px;
+  flex: 1;
+}
+
+.cta__button {
+  background-color: var(--color-accent-bright-blue);
+  color: white;
+  border: none;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+/* Footer */
+.footer {
+  background-color: var(--color-primary-dark-blue);
+  color: white;
+  padding: 50px;
+}
+
+.footer__content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+}
+
+.footer__links a {
+  text-decoration: none;
+  color: white;
+}
+
+.footer__social a {
+  color: white;
+  font-size: 16px;
+  margin-right: 10px;
+  text-decoration: none;
+}
+
 /* Para el diseño móbil */
 @media (max-width: 767px) {
   .texto-area {
